@@ -25,11 +25,11 @@
     
     <i class="fa-solid fa-bars menu-icon" onclick="openMenu()"></i>
     <div id="open-menu">
-        <div class="menu-items">
-            <a href="#"><li class="menu-el">Acasă</li></a>
-            <a href="#locatii"><li class="menu-el">Locații</li></a>
-            <a href="#testimoniale"><li class="menu-el">Testimoniale</li></a>
-            <a href="#rezerva"><li class="menu-el">Rezervă</li></a>
+        <div class="menu-items" onclick="closeMenu()">
+            <a  href="#" onclick="closeMenu()"><li class="menu-el">Acasă</li></a>
+            <a onclick="closeMenu()" href="#locatii"><li class="menu-el">Locații</li></a>
+            <a onclick="closeMenu()" href="#testimoniale"><li class="menu-el">Testimoniale</li></a>
+            <a  href="#rezerva"><li  class="menu-el">Rezervă</li></a>
         </div>
         <img src="./assets/images/croco.png" class="menu-el img-menu" alt=" logo croco">
     </div>
@@ -311,6 +311,12 @@
             open=true
         }
 
+    }
+
+    function closeMenu(){
+        console.log("asdf")
+        document.getElementById("open-menu").style.display = "none";
+        open=false
     }
 
     </script>
