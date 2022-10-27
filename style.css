@@ -774,3 +774,85 @@ img {vertical-align: middle;}
     padding: 3vw;
     text-align: center;
 }
+
+
+/* Special section */
+
+.special-section {
+    background-color: #252525;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-graph{
+    display: flex;
+    flex-direction: row;
+  }
+  .card {
+    width: 20vw;
+    height: auto;
+    background: #121212;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .section-h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5vw;
+  }
+  
+  .special-section-list {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    font-size: 1.5vw;
+  }
+  .spection-section-list li {
+    line-height: 1vw;
+    color: white;
+  }
+  
+  .path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 1.5s ease-in alternate infinite;
+  }
+  
+  @keyframes dash {
+    from {
+      stroke-dashoffset: 1000;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+
+
+  @media only screen and (max-width: 730px) {
+    .card-graph{
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-content: center !important;
+      }
+      .special-section-list {
+
+        font-size: 4vw;
+      }
+      .section-h2 {
+        color: white;
+        font-weight: bold;
+        font-size: 4vw;
+      }
+      .graph-line{
+        width: 70vw;
+    }
+      
+  }
